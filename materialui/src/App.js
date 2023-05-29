@@ -1,13 +1,14 @@
-import Buttons from './Buttons';
-import RatingDemo from './RatingDemo';
-import FormDemo from './FormDemo';
+import Buttons from './components/Buttons';
+import RatingDemo from './components/RatingDemo';
+import FormDemo from './components/FormDemo';
+import TodoList from './TodoList';
+import { CssBaseline } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-    <Buttons />
-    <RatingDemo />
-    <FormDemo lbl='Name'/>
+    <div>
+      <CssBaseline />
+      <TodoList />
     </div>
   );
 }
